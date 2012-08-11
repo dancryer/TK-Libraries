@@ -1,0 +1,17 @@
+<html>
+	<head>
+		<script type="text/javascript" src="binaryIO.js"></script>
+		<script type="text/javascript" src="formats/tileset.js"></script>
+		<script type="text/javascript" src="renderers/tilesetRenderer.js"></script>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var PATH_TILESET = '../testFiles/tiles/';
+			
+			var test = new tileset(PATH_TILESET+'RPGMaker951.tst');
+			var renderer = new tilesetRenderer(test);
+			
+			document.body.appendChild(renderer.render());
+		</script>
+	</body>
+</html>

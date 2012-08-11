@@ -1,0 +1,20 @@
+<html>
+	<head>
+		<script type="text/javascript" src="binaryIO.js"></script>
+		<script type="text/javascript" src="formats/board.js"></script>
+		<script type="text/javascript" src="formats/tileset.js"></script>
+		<script type="text/javascript" src="renderers/boardRenderer.js"></script>
+		<script type="text/javascript" src="renderers/tilesetRenderer.js"></script>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var PATH_BOARD = '../testFiles/boards/';
+			var PATH_TILESET = '../testFiles/tiles/';
+		
+			var test = new board(PATH_BOARD+'modorodar.brd');
+			var renderer = new boardRenderer(test);
+			
+			document.body.appendChild(renderer.render());
+		</script>
+	</body>
+</html>
